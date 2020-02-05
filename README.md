@@ -1,6 +1,6 @@
-# arrayflat
+# Chat telnet
 app developed with jdk8 and maven 3
-the app will flatten an array of arbitrarily nested arrays of integers into a flat array of integers. e.g. [[1,2,[3]],4] -> [1,2,3,4].
+chat server that should listen on TCP port 10000 for clients. The chat protocol is very simple, clients connect with "telnet" and write single lines of text. On each new line of text, the server will broadcast that line to all other connected clients.
 
 # For test:
   execute: mvn test
@@ -8,6 +8,7 @@ the app will flatten an array of arbitrarily nested arrays of integers into a fl
 # For run:
   execute: mvn install  
   move to: in folder /target  
-  execute: java -jar arrayflat-0.0.1-SNAPSHOT.jar "[[1,2,[3]],4]"
+  execute: java -jar chat-0.0.1-SNAPSHOT.jar
+  open more shell and type "telnet localhost 10000"
   
   
