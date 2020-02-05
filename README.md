@@ -8,7 +8,7 @@ chat server that should listen on TCP port 10000 for clients. The chat protocol 
 # For run:
   execute: mvn install  
   move to: in folder /target  
-  execute: java -jar chat-0.0.1-SNAPSHOT.jar
+  execute: java -jar chat-0.0.1-SNAPSHOT.jar  
   open more shell and type "telnet localhost 10000"
   
   
